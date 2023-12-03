@@ -22,10 +22,15 @@ public class DescriptiveFrameData
             rotation = new SerializableQuaternion(FuelCap.rotation),
             position = new SerializableVector3(FuelCap.position)
         };
+        List<Vector2> correctedBoundingbox = new List<Vector2>();
+        Vector2 correctedTopLeft = new Vector2(boundingbox[1].x, Screen.height-boundingbox[0].y);
+        Vector2 correctedBottomRight = new Vector2(boundingbox[0].x, Screen.height-boundingbox[1].y);
+        correctedBoundingbox.Add(correctedTopLeft);
+        correctedBoundingbox.Add(correctedBottomRight);
         bbox = new SerializableBoundingBox
         {
-            topLeft = new SerializableVector2(boundingbox[0]),
-            bottomRight = new SerializableVector2(boundingbox[1])
+            topLeft = new SerializableVector2(correctedBoundingbox[0]),
+            bottomRight = new SerializableVector2(correctedBoundingbox[1])
         };
         foreach (Transform keypoint in keypoints)
         {

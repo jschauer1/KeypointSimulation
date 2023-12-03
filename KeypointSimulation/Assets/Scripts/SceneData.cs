@@ -13,14 +13,6 @@ public class SceneData
     [SerializeField]
     private int terrainLayer;
     [SerializeField]
-    private bool randomizeRotation;
-    [SerializeField]
-    private Vector3 rotation;
-    [SerializeField]
-    private bool randomizeDistance;
-    [SerializeField]
-    private float distance;
-    [SerializeField]
     private int totalPhotos;
     [SerializeField]
     private string intendedDirName;
@@ -41,22 +33,6 @@ public class SceneData
     public int GetTerrainLayer()
     {
         return terrainLayer;
-    }
-    public bool GetRandomizeRotation()
-    {
-        return randomizeRotation;
-    }
-    public Vector3 GetRotation()
-    {
-        return rotation;
-    }
-    public bool GetRandomizeDistance()
-    {
-        return randomizeDistance;
-    }
-    public float GetDistance()
-    {
-        return distance;
     }
     public int GetTotalPhotos()
     {
