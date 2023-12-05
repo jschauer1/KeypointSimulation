@@ -24,6 +24,10 @@ This document provides a comprehensive guide on setting up and using the Keypoin
         - Go to `Window > Rendering > Lighting`.
         - Click on "Generate Lighting", this may take a few minutes.
 
+### Starting the Simulation and Recording Images
+- **Begin the Simulation:**
+    - To start recording images, locate and click the grey play button in the Unity interface. This will initiate the image capture process as defined in the SimulationController settings. Unity will auto exit when images have been collected.
+
 ## Key GameObjects
 
 ### SimulationController
