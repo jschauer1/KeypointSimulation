@@ -1,6 +1,11 @@
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using UnityEngine;
+//Author: Jaxon Schauer
+/// <summary>
+/// Class used to deseralize data and format descriptive json file.
+/// If specific aspect of the file are needed this json is much easier to use.
+/// </summary>
 [System.Serializable]
 public class DescriptiveFrameData
 {
@@ -23,6 +28,7 @@ public class DescriptiveFrameData
             position = new SerializableVector3(FuelCap.position)
         };
         List<Vector2> correctedBoundingbox = new List<Vector2>();
+        //apply necessary data manipulations to match ML model
         Vector2 correctedTopLeft = new Vector2(boundingbox[1].x, Screen.height-boundingbox[0].y);
         Vector2 correctedBottomRight = new Vector2(boundingbox[0].x, Screen.height-boundingbox[1].y);
         correctedBoundingbox.Add(correctedTopLeft);

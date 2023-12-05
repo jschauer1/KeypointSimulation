@@ -267,8 +267,6 @@ GameObject:
   - component: {fileID: 983912913}
   - component: {fileID: 983912912}
   - component: {fileID: 983912911}
-  - component: {fileID: 983912914}
-  - component: {fileID: 983912915}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -350,31 +348,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &983912914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 983912909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bccef1b07d2680649acf80bb29ae5c13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &983912915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 983912909}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfb1d7c632e19e946b4e10b5f97844e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!1 &1347124175
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,82 +393,82 @@ MonoBehaviour:
   sceneDataList:
   - lightIntensity: 0.88
     terrainLayer: 0
-    totalPhotos: 5000
+    totalPhotos: 100
     intendedDirName: Scene1
     material: {fileID: 2100000, guid: 31a2c8a88381047448610a02358f8e3b, type: 2}
   - lightIntensity: 0.28
     terrainLayer: 0
-    totalPhotos: 5000
+    totalPhotos: 100
     intendedDirName: Scene1
     material: {fileID: 2100000, guid: b1ecd7fad4d89a3458f649e049d70750, type: 2}
   - lightIntensity: 0.58
     terrainLayer: 0
-    totalPhotos: 5000
+    totalPhotos: 100
     intendedDirName: Scene1
     material: {fileID: 2100000, guid: b1ecd7fad4d89a3458f649e049d70750, type: 2}
   - lightIntensity: 0.88
     terrainLayer: 0
-    totalPhotos: 5000
+    totalPhotos: 100
     intendedDirName: Scene2
     material: {fileID: 2100000, guid: 31a2c8a88381047448610a02358f8e3b, type: 2}
   - lightIntensity: 0.334
     terrainLayer: 1
-    totalPhotos: 5000
+    totalPhotos: 100
     intendedDirName: Scene2
     material: {fileID: 2100000, guid: b1ecd7fad4d89a3458f649e049d70750, type: 2}
   - lightIntensity: 0.205
     terrainLayer: 1
-    totalPhotos: 5000
+    totalPhotos: 100
     intendedDirName: Scene2
     material: {fileID: 2100000, guid: 42aa2cd525d7c754d8183f67b0ac6ebf, type: 2}
   - lightIntensity: 0.88
     terrainLayer: 2
-    totalPhotos: 5000
+    totalPhotos: 100
     intendedDirName: Scene3
     material: {fileID: 2100000, guid: 31a2c8a88381047448610a02358f8e3b, type: 2}
   - lightIntensity: 0.228
     terrainLayer: 2
-    totalPhotos: 5000
+    totalPhotos: 100
     intendedDirName: Scene5
     material: {fileID: 2100000, guid: b1ecd7fad4d89a3458f649e049d70750, type: 2}
   - lightIntensity: 0.409
     terrainLayer: 2
-    totalPhotos: 5000
+    totalPhotos: 100
     intendedDirName: Scene2
     material: {fileID: 2100000, guid: 42aa2cd525d7c754d8183f67b0ac6ebf, type: 2}
   - lightIntensity: 0.827
     terrainLayer: 3
-    totalPhotos: 5000
+    totalPhotos: 100
     intendedDirName: Scene3
     material: {fileID: 2100000, guid: 31a2c8a88381047448610a02358f8e3b, type: 2}
   - lightIntensity: 0.493
     terrainLayer: 3
-    totalPhotos: 5000
+    totalPhotos: 100
     intendedDirName: Scene3
     material: {fileID: 2100000, guid: 42aa2cd525d7c754d8183f67b0ac6ebf, type: 2}
   - lightIntensity: 0.111
     terrainLayer: 3
-    totalPhotos: 5000
+    totalPhotos: 100
     intendedDirName: Scene4
     material: {fileID: 2100000, guid: 42aa2cd525d7c754d8183f67b0ac6ebf, type: 2}
   - lightIntensity: 0.583
     terrainLayer: 4
-    totalPhotos: 5000
+    totalPhotos: 1
     intendedDirName: Scene4
     material: {fileID: 2100000, guid: b1ecd7fad4d89a3458f649e049d70750, type: 2}
   - lightIntensity: 0.728
     terrainLayer: 4
-    totalPhotos: 5000
+    totalPhotos: 1
     intendedDirName: Scene4
     material: {fileID: 2100000, guid: b1ecd7fad4d89a3458f649e049d70750, type: 2}
   - lightIntensity: 0.22
     terrainLayer: 4
-    totalPhotos: 5000
+    totalPhotos: 1
     intendedDirName: Scene4
     material: {fileID: 2100000, guid: b1ecd7fad4d89a3458f649e049d70750, type: 2}
   - lightIntensity: 0.435
     terrainLayer: 5
-    totalPhotos: 5000
+    totalPhotos: 1
     intendedDirName: Scene5
     material: {fileID: 2100000, guid: b1ecd7fad4d89a3458f649e049d70750, type: 2}
   captureImages: {fileID: 1347124176}

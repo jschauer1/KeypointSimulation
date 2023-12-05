@@ -45,7 +45,7 @@ public class SimulationControl : MonoBehaviour
     [SerializeField, Tooltip("Directional light used in the scene.")]
     private Light directionalLight;
 
-    [SerializeField, Tooltip("Fuel cap object.")]
+    [SerializeField, Tooltip("outer part of Fuel cap object.")]
     private GameObject fuelCap;
 
     [SerializeField, Tooltip("Inner part of the fuel cap.")]
@@ -127,7 +127,7 @@ public class SimulationControl : MonoBehaviour
     }
 
     /// <summary>
-    /// Sets initial scene settings and parameters.
+    /// Sets initial parameters.
     /// </summary>
     private void InitializeSceneSettings()
     {
@@ -181,7 +181,7 @@ public class SimulationControl : MonoBehaviour
         // Adjust camera position based on bounding box constraints
         AdjustCameraPositionForBoundingBox(bbox);
 
-        // If the bounding box is out of bounds in both x and y, set the start position
+        // If the bounding box is out of bounds in both x and y, reset to the start position with random z
         if (!InBoundsx(bbox) && !InBoundsy(bbox))
         {
             SetStartPos();
@@ -223,9 +223,8 @@ public class SimulationControl : MonoBehaviour
 
 
     /// <summary>
-    /// Takes a photo and captures frame data.
-    /// This method is responsible for capturing images and their corresponding frame data 
-    /// based on bounding box and keypoint data. 
+    /// Takes a photo and captures frame data
+    /// based on bounding box and keypoint information. 
     /// </summary>
     private void CollectImageData()
     {
@@ -363,9 +362,9 @@ public class SimulationControl : MonoBehaviour
         {
             for (int x = 0; x < terrainData.alphamapWidth; x++)
             {
-                for (int i = 0; i < terrainData.alphamapLayers; i++)
+                for (int z = 0; z < terrainData.alphamapLayers; z++)
                 {
-                    alphaMap[x, y, i] = i == newLayerIndex ? 1.0f : 0.0f;
+                    alphaMap[x, y, z] = z == newLayerIndex ? 1.0f : 0.0f;
                 }
             }
         }
@@ -400,7 +399,7 @@ public class SimulationControl : MonoBehaviour
     }
 
     /// <summary>
-    /// Moves the camera down by a predefined offset and adjusts its position based on the start position.
+    /// Moves the camera down by a predefined offset.
     /// </summary>
     /// <param name="startPos">The starting position of the camera.</param>
     private void MoveCapDown(Vector3 startPos)
@@ -482,9 +481,7 @@ public class SimulationControl : MonoBehaviour
         Vector3[] vertices = meshFilter.mesh.vertices;
         for (int i = 0; i < vertices.Length; i++)
         {
-            // World space
             vertices[i] = innerFuelCap.transform.TransformPoint(vertices[i]);
-            // GUI space
             vertices[i] = camera.WorldToScreenPoint(vertices[i]);
             vertices[i].y = vertices[i].y;
         }
@@ -506,7 +503,6 @@ public class SimulationControl : MonoBehaviour
     /// <summary>
     /// Checks if the bounding box is within the screen bounds along the X-axis.
     /// </summary>
-    /// <returns>True if the bounding box is within the X-axis bounds, otherwise false.</returns>
     private bool InBoundsx(List<Vector2> bbox)
     {
         // Check if the bounding box is within the screen width
@@ -516,7 +512,6 @@ public class SimulationControl : MonoBehaviour
     /// <summary>
     /// Checks if the bounding box is within the screen bounds along the Y-axis.
     /// </summary>
-    /// <returns>True if the bounding box is within the Y-axis bounds, otherwise false.</returns>
     private bool InBoundsy(List<Vector2> bbox)
     {
         // Check if the bounding box is within the screen height
@@ -541,7 +536,7 @@ public class SimulationControl : MonoBehaviour
         EditorApplication.isPlaying = false;
     }
     /// <summary>
-    /// Called when the object is destroyed. Saves all frame data.
+    /// Called when simulation exits.
     /// </summary>
     private void OnDestroy()
     {

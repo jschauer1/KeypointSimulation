@@ -2,6 +2,10 @@ using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//Author: Jaxon Schauer
+/// <summary>
+/// Class used to deseralize data and format json file.
+/// </summary>
 [System.Serializable]
 public class FrameData
 {
@@ -26,12 +30,14 @@ public class FrameData
         };
         bbox = new List<float>
         {
+            //apply necessary data manipulations to match ML model
              boundingbox[0].x, Screen.height - boundingbox[1].y,boundingbox[1].x, Screen.height - boundingbox[0].y
         };
         int keypointId = 1;
         foreach (Transform keypoint in keypoints)
         {
             Vector2 screenPos = Camera.main.WorldToScreenPoint(keypoint.position);
+            //apply necessary data manipulations to match ML model
             this.keypoints.Add(new List<float> { screenPos.x, Screen.height-screenPos.y, keypointId++ });
         }
         img_dir = imgDirectory;
