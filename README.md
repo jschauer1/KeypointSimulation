@@ -1,7 +1,6 @@
 # Keypoint Simulation
 
-This document provides a comprehensive guide on setting up and using the Keypoint Simulation in Unity. The project simulates keypoint detection on a fuelcap using a Unity environment. 
-see https://github.com/keenanbuckley/RealsenseFuelcap for more information on the project
+This document provides a comprehensive guide on setting up and using the Keypoint Simulation in Unity. The project simulates keypoint detection on a fuelcap using a Unity environment. see https://github.com/keenanbuckley/RealsenseFuelcap for more information on the project
 
 ## Dependencies
 - **Unity:** The only dependency for this project is Unity. Install unity 2023.1.3(Other versions will likely work as well).
@@ -16,7 +15,7 @@ see https://github.com/keenanbuckley/RealsenseFuelcap for more information on th
     - Navigate to the cloned project directory.
     - Open the `KeypointSimulation` folder within the project directory.
 3. **Adjust Project Settings:**
-    - Once the project loads in Unity, set the resolution to 1280x720 for optimal display.
+    - Once the project loads in Unity, set the resolution to 1280x720.
 
 ### Image Quality and Lighting
 - **Check and Adjust Lighting:**
