@@ -1,6 +1,6 @@
 # Keypoint Simulation
 
-This document provides a comprehensive guide on setting up and using the Keypoint Simulation in Unity. The project simulates keypoint detection on a fuelcap using a Unity environment. see https://github.com/keenanbuckley/RealsenseFuelcap for more information on the project
+This document provides a comprehensive guide on setting up and using the Keypoint Simulation in Unity. The project simulates keypoint detection on a fuelcap using a Unity environment. See [RealsenseFuelcap](https://github.com/keenanbuckley/RealsenseFuelcap) for more information on the project
 
 ## Dependencies
 - **Unity:** The only dependency for this project is Unity. Install unity 2023.1.3(Other versions will likely work as well).
@@ -8,7 +8,7 @@ This document provides a comprehensive guide on setting up and using the Keypoin
 ## Setup Instructions
 
 ### Cloning and Opening the Project
-1. **Clone the Project:** Start by cloning the project from GitHub. You can find the project at [RealsenseFuelcap](https://github.com/jschauer1/KeypointSimulation.git).
+1. **Clone the Project:** Start by cloning the project from GitHub. You can find the project at [KeypointSimulation](https://github.com/jschauer1/KeypointSimulation.git).
 2. **Open the Project in Unity:**
     - Launch Unity Hub.
     - Click on "Open".
@@ -59,9 +59,10 @@ This document provides a comprehensive guide on setting up and using the Keypoin
   - **Image Directory (img_dir):** Indicates the directory where the corresponding image for the data is stored, ensuring easy retrieval of visual data.
 
 ## Contributors
-- Jaxon Schauer: [GitHub Profile](https://github.com/jschauer1)
-- Keenan Buckley: [GitHub Profile](https://github.com/keenanbuckley)
-- David Munro: [GitHub Profile](https://github.com/damunro)
+
+- [Jaxon Schauer](https://github.com/jschauer1) - <https://github.com/jschauer1>
+- [Keenan Buckley](https://github.com/keenanbuckley) - <https://github.com/keenanbuckley>
+- [David Munro](https://github.com/damunro) - <https://github.com/damunro>
 
 ## License
 
