@@ -59,7 +59,7 @@ This document provides a comprehensive guide on setting up and using the Keypoin
   - **Image Directory (img_dir):** Indicates the directory where the corresponding image for the data is stored, ensuring easy retrieval of visual data.
 
 ## Contributors
-
+- Jaxon Schauer: [GitHub Profile](https://github.com/jschauer1)
 - Keenan Buckley: [GitHub Profile](https://github.com/keenanbuckley)
 - David Munro: [GitHub Profile](https://github.com/damunro)
 
