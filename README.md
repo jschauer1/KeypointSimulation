@@ -19,7 +19,7 @@ This document provides a comprehensive guide on setting up and using the Keypoin
 
 ### Image Quality and Lighting
 - **Check and Adjust Lighting:**
-    - Compare the project's image quality with the provided sample images.
+    - Compare the project's image quality with the provided sample image.
     - If the lighting differs significantly, bake the lighting:
         - Go to `Window > Rendering > Lighting`.
         - Click on "Generate Lighting", this may take a few minutes.
@@ -55,11 +55,11 @@ This document provides a comprehensive guide on setting up and using the Keypoin
 - **Data Storage Method:** Data is organized and saved in JSON files, which offer a structured and easily readable format.
 - **Image and Data Correlation:** Each image is associated with a unique frame key, stored in a text file. This setup allows for straightforward referencing between images and their corresponding data.
 - **JSON Structure Overview:**
-  - **Image Identifier:** Each JSON file is keyed by a unique identifier for each image.
+  - **Image Identifier:** The JSON file is keyed by a unique identifier for each image.
   - **Keypoints:** This section stores an array of keypoints, with each keypoint represented by its coordinates and an identifier. It provides critical data for the keypoint detection aspect of the simulation.
   - **Camera Data:** Contains details about the camera's position and orientation during the simulation. This helps in understanding the perspective from which each image was captured.
-  - **Fuel Cap Data:** Includes information about the fuel cap's position and orientation, which is crucial for accurately correlating the keypoints with the object.
-  - **Bounding Box (bbox):** Describes the bounding box for the object in the image, essential for object detection and spatial analysis.
+  - **Fuel Cap Data:** Includes information about the fuel cap's position and orientation. This helps in understanding the perspective from which each image was captured.
+  - **Bounding Box (bbox):** Describes the bounding box for the object in the image, including the top left corner and bottom right corner.
   - **Image Directory (img_dir):** Indicates the directory where the corresponding image for the data is stored, ensuring easy retrieval of visual data.
 
 ## Contributors
@@ -67,7 +67,8 @@ This document provides a comprehensive guide on setting up and using the Keypoin
 - [Jaxon Schauer](https://github.com/jschauer1) - <https://github.com/jschauer1>
 - [Keenan Buckley](https://github.com/keenanbuckley) - <https://github.com/keenanbuckley>
 - [David Munro](https://github.com/damunro) - <https://github.com/damunro>
+- [Xavier Cotton](https://github.com/Eldarch) - <https://github.com/Eldarch>
 
 ## License
 
-This project is under the BSD Zero-Clause License. For more details, refer to the [LICENSE](/
+This project uses a permissive BSD Zero-Clause License. For more information, see the accompanying [LICENSE](/LICENSE) file.

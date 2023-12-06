@@ -36,5 +36,5 @@ sysinfo.txt
 *.unitypackage
 
 # Captures directory
-#Captures/*
+Captures/*
 #!Captures/README.md
