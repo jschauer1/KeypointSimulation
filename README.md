@@ -2,6 +2,7 @@
 
 This document provides a comprehensive guide on setting up and using the Keypoint Simulation in Unity. The project simulates keypoint detection on a fuelcap using a Unity environment. See [RealsenseFuelcap](https://github.com/keenanbuckley/RealsenseFuelcap) for more information on the project
 
+The simulation is used to quickly generate thousands of annotated images for machine learning model training. 
 ## Dependencies
 - **Unity:** The only dependency for this project is Unity. Install unity 2023.1.3(Other versions will likely work as well).
 
